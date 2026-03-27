@@ -284,14 +284,14 @@
       border: 1px solid rgba(107, 114, 128, 0.25);
     }
 
-    .tier4 .tier-pill {
+    .t4 .tier-pill {
       background: rgba(34, 197, 85, 0.12);
       color: var(--tier4);
       border: 1px solid rgba(34, 197, 85, 0.25);
     }
 
     /* Launched section - grid of cards */
-    .tier4 .launched-grid {
+    .launched-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 8px;
@@ -2450,7 +2450,7 @@
       return { active: 'st-active', tge_soon: 'st-tge_soon', late: 'st-late', launched: 'st-launched' }[s] || 'st-active';
     }
     function tierClass(tid) {
-      return { t1: 't1', t2: 't2', t3: 't3', t4: 'tier4' }[tid] || 't3';
+      return { t1: 't1', t2: 't2', t3: 't3', t4: 't4' }[tid] || 't3';
     }
 
     function formatWithSpaces(n) {
